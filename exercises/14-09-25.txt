@@ -1,0 +1,34 @@
+Coding Challenge #3
+
+There are two basketball teams, Eagles and Sharks. They play against each other 3 times. The team with the highest average score wins the championship trophy!
+
+1. Calculate the average score for each team, using the test data below.
+
+2. Compare the team’s average scores to determine the winner of the competition, and print it to the console. Remember that there can also be a draw if both averages are the same.
+
+3. BONUS 1: Add a requirement for a minimum score of 80 points. With this rule, a team only wins if it has a higher score than the other team and at the same time achieves at least 80 points on average.
+
+4. BONUS 2: The minimum score also applies to a draw! So, a draw only happens when both teams have the same average score and both have at least 80 points. Otherwise, no team wins the trophy.
+
+TEST DATA: Eagles score 75, 89, and 95. Sharks score 92, 81, and 78.
+TEST DATA BONUS 1: Eagles score 85, 92, and 88. Sharks score 79, 90, and 82.
+TEST DATA BONUS 2: Eagles score 88, 90, and 82. Sharks score 84, 91, and 85.
+
+----------------------------------------------------------------------------
+
+Coding Challenge #4
+
+Sophie wants to create a simple delivery fee calculator for an online shopping app. In her city, the delivery fee is 10% of the order value if it’s between 100 and 500. If the value is outside this range, the delivery fee is 15%.
+
+1. Your task is to calculate the delivery fee based on the order value. Create a variable called deliveryFee for this. You’re not allowed to use an if/else statement 😅 (You can start with an if/else if you like, and then try converting it into a ternary operator!)
+
+2. Print a string to the console containing the order value, the delivery fee, and the final amount (order + deliveryFee).
+Example: “The order was 450, the delivery fee was 45, and the total amount 495”
+
+TEST DATA: Try with order values 450, 80, and 600.
+
+HINTS:
+- To calculate 15% of a value, multiply it by 0.15.
+- Value X is between 100 and 500 if X >= 100 && X <= 500. 
+
+-------------------------------------------------------------------------------
