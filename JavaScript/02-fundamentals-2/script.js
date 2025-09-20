@@ -49,6 +49,7 @@
 
 // Arrow functions
 
+/*
 // function declaration
 function calcAge1(birthYeah) {
     return 2037 - birthYeah;
@@ -69,3 +70,87 @@ const yearsUntilRetirement = (birthYeah, firstName) => {
     // return retirement;
     return `${firstName} retires in ${retirement} years`;
 }
+*/
+
+//////////////////////////////////////////////////
+
+/*
+function cutFruitPieces(fruit) {
+    return fruit * 4
+}
+
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+
+    const juice = `Juice with ${applePieces} piece of apple and ${orangePieces} pieces of orange.`;
+    return juice;
+}
+
+console.log(fruitProcessor(4, 3));
+*/
+
+////////////////////////////////////////////////////
+
+// Basic array operations
+/*
+const friends = ["Ajay", "Alex", "John"];
+
+// console.log(friends[0])
+// let a = 10;
+// let b = 20;
+// console.log(a);
+// console.log(b);
+// b = a;
+// console.log(b);
+// a = 15;
+// console.log(a);
+// console.log(b);
+
+// const a = friends;
+// console.log(a);
+// console.log(friends);
+friends.unshift("Alan");
+console.log(friends)
+// console.log(a);
+
+friends.push("Bob")
+console.log(friends);
+const poppedElement = friends.pop()
+console.log(poppedElement);
+console.log(friends);
+friends.shift();
+console.log(friends);
+console.log(friends.indexOf("Ajay"));
+console.log(friends.includes("Ajay"));
+
+const friendName = prompt("Enter your friend name: ")
+console.log(friendName);
+if (friends.includes(friendName)) {
+    console.log("You have a friend called Alex");
+} else {
+    console.log(`You don't have a friend called ${friendName}`);
+}
+    */
+
+/////////////////////////////////////////////
+
+// Objects
+// const a = []
+
+// console.log(typeof a);
+
+const person = {
+    firstName: "Jonh",
+    lastName: "Michal",
+    age: 26,
+    job: "teacher",
+    friends: ['Michael', 'Peter', 'Steven'],
+}
+
+console.log(person);
+console.log(person.firstName);
+console.log(person.friends);
+console.log(Object.keys(person));
+console.log(Object.values(person));
+console.log(Object.entries(person));
