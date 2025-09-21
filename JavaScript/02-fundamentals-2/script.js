@@ -140,17 +140,65 @@ if (friends.includes(friendName)) {
 
 // console.log(typeof a);
 
-const person = {
-    firstName: "Jonh",
-    lastName: "Michal",
-    age: 26,
-    job: "teacher",
-    friends: ['Michael', 'Peter', 'Steven'],
-}
+// const person = {
+//     firstName: "Jonh",
+//     lastName: "Michal",
+//     age: 26,
+//     job: "teacher",
+//     friends: ['Michael', 'Peter', 'Steven'],
+// }
 
-console.log(person);
-console.log(person.firstName);
-console.log(person.friends);
-console.log(Object.keys(person));
-console.log(Object.values(person));
-console.log(Object.entries(person));
+// console.log(person);
+// console.log(person.firstName);
+// console.log(person.friends);
+// console.log(Object.keys(person));
+// console.log(Object.values(person));
+// console.log(Object.entries(person));
+
+// console.log(person.firstName);
+
+// const a = prompt("Enter a field that you want (firstName, lastName, age, job, friends)")
+// console.log(person[a]);
+
+// const person = {
+//     firstName: "Jonh",
+//     lastName: "Michal",
+//     age: 26,
+//     height: 1.87,
+//     weight: 89,
+//     calcBMI: function () {
+//         const bmi = this.weight / this.height ** 2
+//         return bmi
+//     }
+// }
+
+// console.log(person.calcBMI());
+
+////////////////////////////////////////////////////
+
+// for loop
+
+// for (let i = 0; i <= 5; i++) {
+//     console.log(i);
+// }
+
+// for (let i = 5; i >= 0; i--) {
+//     console.log(i);
+// }
+
+// while loop
+
+// let i = 0
+
+// while (i <= 5) {
+//     console.log(i);
+//     i++;
+// }
+
+let dice = Math.trunc(Math.random() * 6) + 1
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log("Loop is about end...");
+}
