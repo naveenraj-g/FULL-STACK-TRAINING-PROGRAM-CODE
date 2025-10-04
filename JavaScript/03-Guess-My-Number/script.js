@@ -23,7 +23,7 @@ const message = document.querySelector(".message");
 const scoreLabel = document.querySelector(".score");
 const highScoreEle = document.querySelector(".highscore");
 
-const secretNumber = Math.trunc(Math.random() * 20) + 1;
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highScore = 0;
 
@@ -65,6 +65,19 @@ checkBtn.addEventListener("click", function () {
       scoreLabel.textContent = 0;
     }
   }
+})
+
+document.querySelector(".again").addEventListener("click", () => {
+  score = 20;
+  secretNumber = Math.trunc(Math.random() * 20) + 1;
+
+  message.textContent = "Start guessing...";
+  scoreLabel.textContent = score;
+  number.textContent = "?";
+  document.querySelector(".guess").value = "";
+
+  document.querySelector("body").style.backgroundColor = "#222";
+  number.style.width = "15rem";
 })
 
 
