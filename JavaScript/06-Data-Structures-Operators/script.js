@@ -68,10 +68,150 @@ const restaurant = {
     },
 };
 
+
+// Looping Objects
+
+const properties = Object.keys(restaurant.openingHours)
+const values = Object.values(restaurant.openingHours)
+// console.log(properties);
+// console.log(values);
+
+// for (const day of properties) {
+//     console.log(day);
+// }
+
+// for (const time of values) {
+//     console.log(Object.keys(time));
+// }
+
+const entries = Object.entries(restaurant.openingHours);
+console.log(entries);
+
+for (const [day, { open, close }] of entries) {
+    console.log(`On ${day} we open at ${open} and close at ${close}`);
+}
+
+
+//////////////////////////////////
+/*
+// Optional Chaining
+if (restaurant.openingHours && restaurant.openingHours.mon) {
+    console.log(restaurant.openingHours.mon.open);
+}
+
+// console.log(restaurant?.openingHours?.mon);
+
+const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+
+for (const day of days) {
+    const open = restaurant.openingHours[day]?.open ?? "closed"
+    console.log(`On ${day}, we ${open === "closed" ? `are ${open}` : `open at ${open}`}`);
+}
+
+console.log(restaurant.order?.(0, 1) ?? "Method does not exist");
+
+// Arrays
+const users = [{ name: 'Jonas', email: 'hello@jonas.io' }];
+// const users = [];
+
+console.log(users[0]?.name ?? 'User array empty');
+*/
+
+/////////////////////////////////////////
+/*
+// The for of loop
+
+const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(menu);
+
+for (const item of menu) {
+    // console.log(item);
+}
+
+for (const [index, item] of menu.entries()) {
+    console.log(`${index + 1}. ${item}`);
+}
+*/
+
+/////////////////////////////////////////
+
+/*
+
+// The Nullish Coalescing operator
+restaurant.numGuest = 0;
+const guest1 = restaurant.numGuest || 10;
+console.log(guest1);
+
+// Nullish: null and undefined (not - 0 "")
+const guest2 = restaurant.numGuest ?? 10;
+console.log(guest2);
+
+const a = NaN
+
+console.log(a ?? 10);
+
+*/
+
+/*
+// Short Circutting (&& and ||)
+
+// || (OR)
+console.log(3 || "naveen");
+console.log("" || "naveen");
+
+restaurant.newGuest = 0;
+const guest1 = restaurant.newGuest ? restaurant.newGuest : 10;
+console.log(guest1);
+
+const guest2 = restaurant.newGuest || 10;
+console.log(guest2);
+
+// && (AND)
+console.log(0 && "naveen");
+console.log(7 && "naveen");
+
+if (restaurant.orderPizza) {
+    restaurant.orderPizza("mushroom", "spinach")
+}
+
+restaurant.orderPizza && restaurant.orderPizza("mushroom", "spinach")
+*/
+
+/////////////////////////////////////////////
+
+/*
+// Rest patterns and parameters
+
+// const arr = [12, ...[2,3]]
+
+// arrays
+const [a, b, c, ...e] = [1, 2, 3, 4, 5, 6];
+// console.log(a, b, c);
+// console.log(e);
+
+const [pizza, pasta, ...otherFood] = [...restaurant.mainMenu, ...restaurant.starterMenu];
+// console.log(pizza, pasta);
+// console.log(otherFood);
+
+// objects
+const { sat, ...weekdays } = restaurant.openingHours
+console.log(sat, weekdays);
+
+// functions
+const add = function (...nums) {
+    let sum = 0;
+    for (let i = 0; i < nums.length; i++) sum += nums[i];
+    console.log(sum);
+}
+
+add(1, 2, 3, 4, 5, 65, 76, 7, 8);
+
+restaurant.orderPizza("mushroom", "onion", "olives")
+*/
 /////////////////////////////////////////////
 
 // Spread Operator (...)
-
+/*
 const arr = [5, 7, 8];
 const arr1 = [2, 4, arr[0], arr[1], arr[2]]
 console.log(arr1);
@@ -118,6 +258,7 @@ console.log(newRestaurant);
 console.log(newRestaurant1);
 
 const r = { ...restaurant };
+*/
 
 //////////////////////////////////////////////
 
