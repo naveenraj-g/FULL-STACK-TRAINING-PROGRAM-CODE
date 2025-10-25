@@ -68,9 +68,72 @@ const restaurant = {
     },
 };
 
+/*
+// Strings
+const airline = "Indian Airline";
+const plane = 'A320';
 
+console.log(plane[0]);
+console.log(airline.length);
+
+console.log(airline.indexOf("n"));
+console.log(airline.lastIndexOf("n"));
+
+console.log(airline.slice(4, 10));
+console.log(airline.slice(0, 4));
+
+console.log(new String("naveen"));
+console.log(typeof new String("naveen"));
+console.log(new String("naveen").slice(0, 3));
+*/
+
+/*
+// Maps
+const rest = new Map();
+rest.set("name", "Naveen");
+rest.set("lastName", "Raj");
+rest.set("place", "xyz");
+console.log(rest);
+
+rest.set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic']);
+console.log(rest.get("name"));
+console.log(rest.get("categories"));
+console.log(rest.has("names"));
+rest.set("Heading", document.querySelector('h1'));
+rest.set(document.querySelector('h1'), "Heading");
+console.log(rest);
+console.log(rest.get("Heading"));
+console.log(rest.get("<h1>06. Data Structure Operator</h1>"));
+*/
+
+/*
+// sets
+const ordersSet = new Set([
+    'Pasta',
+    'Pizza',
+    'Pizza',
+    'Risotto',
+    'Pasta',
+    'Pizza',
+]);
+
+console.log(ordersSet);
+// console.log(new Set("Naveen"));
+
+// console.log(ordersSet.size);
+// console.log(ordersSet.has("Pizza"));
+// console.log(ordersSet.has("pizza"));
+ordersSet.add("Garlic Bread");
+ordersSet.delete("Pizza");
+console.log(ordersSet);
+
+for (const order of ordersSet) console.log(order);
+*/
+
+////////////////////////////////////////////////
+
+/*
 // Looping Objects
-
 const properties = Object.keys(restaurant.openingHours)
 const values = Object.values(restaurant.openingHours)
 // console.log(properties);
@@ -90,7 +153,7 @@ console.log(entries);
 for (const [day, { open, close }] of entries) {
     console.log(`On ${day} we open at ${open} and close at ${close}`);
 }
-
+*/
 
 //////////////////////////////////
 /*
