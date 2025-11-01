@@ -85,16 +85,102 @@ movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 // console.log(bal);
 
-const balance = movements.reduce((acc, m) => {
-    if (m > 0) {
-        if (acc.deposite) {
-            acc.deposite += m;
-        } else {
-            acc.deposite = m;
-        }
+// const balance = movements.reduce((acc, m) => {
+//     if (m > 0) {
+//         if (acc.deposite) {
+//             acc.deposite += m;
+//         } else {
+//             acc.deposite = m;
+//         }
+//     }
+
+//     return acc;
+// }, {});
+
+// console.log(balance);
+
+movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+// const firstWithdrawal = movements.find(val => val < 0);
+// console.log(firstWithdrawal);
+
+// const firstWithdrawalIndex = movements.findIndex(val => val < 0);
+// console.log(firstWithdrawalIndex);
+
+// const lastWithdrawal = movements.findLast(val => val < 0);
+// console.log(lastWithdrawal);
+
+// const lastWithdrawalIndex = movements.findLastIndex(val => val < 0);
+// console.log(lastWithdrawalIndex);
+
+// const owners = ['Jonas', 'Zach', 'Adam', 'Martha'];
+
+// console.log(owners);
+// owners.sort();
+// console.log(owners);
+
+// console.log(movements);
+
+// return < 0, a, b (keep order)
+// return > 0, b, a (switch order)
+
+// movements.sort((a, b) => {
+//     if (a > b) return 1;
+//     if (a < b) return -1;
+//     return 0;
+// });
+
+// movements.sort((a, b) => {
+//     if (a > b) return -1;
+//     if (a < b) return 1;
+//     return 0;
+// });
+
+// movements.sort((a, b) => b - a);
+
+
+// console.log(movements);
+
+// const user1 = {
+//     name: "arun",
+//     age: 12,
+//     getAge() {
+//         console.log(this.age);
+//     },
+// };
+
+// const arr6 = [1, 2];
+// console.log(arr6);
+
+const str1 = new String("abc");
+console.log(str1);
+
+class User {
+    static numOfusers = 0;
+    _userDefaultPassword = "1243215";
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+        User.numOfusers++;
     }
 
-    return acc;
-}, {});
+    getAge() {
+        console.log(this.age);
+    }
 
-console.log(balance);
+    static getTotalUser() {
+        console.log(User.numOfusers);
+    }
+}
+
+const user1 = new User("arun", 12);
+const user2 = new User("raj", 12);
+const user3 = new User("arun", 12);
+const user4 = new User("arun", 12);
+const user5 = new User("arun", 12);
+
+console.log(user1);
+user1.getAge();
+// User.getTotalUser()
+console.log(User.numOfusers);
+console.log(User._userDefaultPassword);
