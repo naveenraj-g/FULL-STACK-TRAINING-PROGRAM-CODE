@@ -152,35 +152,89 @@ movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 // const arr6 = [1, 2];
 // console.log(arr6);
 
-const str1 = new String("abc");
-console.log(str1);
+// const str1 = new String("abc");
+// console.log(str1);
 
-class User {
-    static numOfusers = 0;
-    _userDefaultPassword = "1243215";
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-        User.numOfusers++;
-    }
+// class User {
+//     static numOfusers = 0;
+//     _userDefaultPassword = "1243215";
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//         User.numOfusers++;
+//     }
 
-    getAge() {
-        console.log(this.age);
-    }
+//     getAge() {
+//         console.log(this.age);
+//     }
 
-    static getTotalUser() {
-        console.log(User.numOfusers);
-    }
-}
+//     static getTotalUser() {
+//         console.log(User.numOfusers);
+//     }
+// }
 
-const user1 = new User("arun", 12);
-const user2 = new User("raj", 12);
-const user3 = new User("arun", 12);
-const user4 = new User("arun", 12);
-const user5 = new User("arun", 12);
+// const user1 = new User("arun", 12);
+// const user2 = new User("raj", 12);
+// const user3 = new User("arun", 12);
+// const user4 = new User("arun", 12);
+// const user5 = new User("arun", 12);
 
-console.log(user1);
-user1.getAge();
-// User.getTotalUser()
-console.log(User.numOfusers);
-console.log(User._userDefaultPassword);
+// console.log(user1);
+// user1.getAge();
+// // User.getTotalUser()
+// console.log(User.numOfusers);
+// console.log(User._userDefaultPassword);
+
+// const lotteryPromise = new Promise((resolve, reject) => {
+//     console.log("Lotter draw is happening!");
+//     setTimeout(() => {
+//         if (Math.random() >= 0.5) {
+//             resolve("You win!");
+//         } else {
+//             reject(new Error("You lost!"));
+//         }
+//     }, 2000);
+// });
+
+// // lotteryPromise.then(res => console.log(res)).catch(err => console.error(err));
+
+// const wait = function (seconds) {
+//     return new Promise((resolve) => {
+//         setTimeout(resolve, seconds * 1000);
+//     });
+// }
+
+// wait(1).then(() => {
+//     console.log("1 second passed");
+//     return wait(1);
+// }).then(() => {
+//     console.log("2 second passed");
+//     return wait(1);
+// }).then(() => {
+//     console.log("3 second passed");
+//     return wait(1);
+// })
+
+// fetch("https://restcountries.com/v2/name/india").then(res => {
+//     // console.log(res);
+//     return res.json();
+// }).then(data => {
+//     console.log(data);
+// }).catch(err => {
+//     console.error(err);
+// });
+
+// const fetchCountry = async function (country) {};
+// const fetchCountry = async  (country) => {};
+// async function fetchCountry() {
+//     try {
+//         const res = await fetch(`https://restcountries.com/v2/name/india`);
+//         if (!res.ok) throw new Error(`Country not found (${res.status})`);
+//         const data = await res.json();
+//         console.log(data);
+//     } catch (err) {
+//         console.log(err);
+//     }
+// }
+
+// fetchCountry();
