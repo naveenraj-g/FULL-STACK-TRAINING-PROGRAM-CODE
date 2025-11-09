@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
 
 * {
@@ -28,6 +30,7 @@ header img {
   height: 5rem;
   width: 10rem;
   object-fit: cover;
+  margin-inline: auto;
 }
 
 header h1 {
@@ -86,6 +89,7 @@ main h2 {
   height: 4rem;
   width: 6rem;
   object-fit: cover;
+  margin-inline: auto;
 }
 
 #core-concepts li h3 {
